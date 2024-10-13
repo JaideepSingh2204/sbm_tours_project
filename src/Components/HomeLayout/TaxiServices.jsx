@@ -1,12 +1,19 @@
 import React from 'react'
-import CustomCard from '../../CommonComponent/CustomCard'
+import ServicesCard from '../../CommonComponent/Cards/ServicesCard';
+import { Rajasthan, Herosections, Tower } from "../../Assets/Image/index"
 
 const TaxiServices = () => {
 
     const taxiServicesCardData = [
-        { imageUrl: "./image/Herosections.jpg", imageTitle: "imageHero", headerName: "Argentina – Great Diving Trip", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
-        { imageUrl: "./image/rajasthan.jpg", imageTitle: "imageRajasthan", headerName: "India – Mumbai, New Delhi", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
-        { imageUrl: "./image/Herosections.jpg", imageTitle: "imageHero section", headerName: "America – Grand canyon, Golden Gate", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Tower, imageTitle: "imageHero", headerName: "Argentina – Great Diving Trip", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Herosections, imageTitle: "imageRajasthan", headerName: "India – Mumbai, New Delhi", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Rajasthan, imageTitle: "imageHero section", headerName: "America – Grand canyon, Golden Gate", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Tower, imageTitle: "imageHero", headerName: "Argentina – Great Diving Trip", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Herosections, imageTitle: "imageRajasthan", headerName: "India – Mumbai, New Delhi", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Rajasthan, imageTitle: "imageHero section", headerName: "America – Grand canyon, Golden Gate", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Tower, imageTitle: "imageHero", headerName: "Argentina – Great Diving Trip", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+        { imageUrl: Herosections, imageTitle: "imageRajasthan", headerName: "India – Mumbai, New Delhi", content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,…", link: "View all tours" },
+
     ];
     return (
 
@@ -26,8 +33,8 @@ const TaxiServices = () => {
                 </header>
             </section>
             <section>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-16 gap-10 px-5 ">
-                    <CustomCard cardData={taxiServicesCardData} figureClasses="h-[500px]" figcaptionClasses="block  text-center" />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16 gap-8 px-5">
+                    <ServicesCard cardData={taxiServicesCardData} />
                 </div>
             </section>
         </>

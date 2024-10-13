@@ -1,5 +1,5 @@
 import { React } from "react"
-import { HeroSection, Destinations, PopularTours, TaxiServices } from "../HomeLayout/index";
+import { HeroSection, Destinations, PopularTours, TaxiServices, Testimonial } from "../HomeLayout/index";
 
 const Home = () => {
 
@@ -10,6 +10,7 @@ const Home = () => {
                 <Destinations />
                 <PopularTours />
                 <TaxiServices />
+                <Testimonial />
             </div>
         </>
     )

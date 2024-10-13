@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Rajasthan } from "../../Assets/Image";
 const HeroSection = () => {
     return (
         <>
@@ -18,9 +18,10 @@ const HeroSection = () => {
                 </div>
 
                 <div
-                    className="w-[95%] ms-4 md:w-[42%] h-[400px] md:h-[650px] bg-cover bg-center rounded-xl my-10 "
-                    style={{ backgroundImage: "url(./Image/rajasthan.jpg)" }}
-                ></div>
+                    className="w-[95%] ms-4 md:w-[42%] h-[400px] md:h-[650px]  my-10 "
+                >
+                    <img src={Rajasthan} alt="Herosection" className="bg-cover bg-center rounded-xl h-[400px] md:h-[650px]" />
+                </div>
 
 
             </div>
